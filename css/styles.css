@@ -1,7 +1,37 @@
-:root{
+:root {
     --accent-color: #2196F3;
+    --text-color: #212121;
+    --whitey-color: #ffffff;
+    --mail-color: #757575;
+    --background-color: #2F303A;
+    --knob-color: #2196F3;
+
+    }
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
 .list {list-style: none;
 }
 .link {
@@ -9,9 +39,21 @@ text-decoration: none;
 }
 
 body {font-family: 'Roboto', sans-serif;
+    background-color: var(--whitey-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
+
 /* =======================================HEADER */
+.container {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .logo {
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
@@ -20,7 +62,7 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--accent-color);
 }
-.logo-color{
+.logo-up-color{
     color: #000000;
 }
 
@@ -30,29 +72,26 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
-color: #212121;
+color: var(--text-color);
 }
 .menu-link:hover,
 .menu-link:focus {
 color: var(--accent-color);
 }
 
-.color-btn{
-  color:#2196F3; 
-}
 .contact-phone-number{
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #757575; 
+color: var(--mail-color); 
 }
 
 /*  =========================================HERO */
 
 .hero{
 
-background: #2F303A;
+background: var(--background-color);
 }
 .main-title{
 font-weight: 900;
@@ -61,40 +100,44 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--whitey-color);
 }
 
 .modal-btn{
-font-family: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
-cursor:pointer;
-/*color: #FFFFFF;*/
+color: var(--whitey-color);
+cursor: pointer;
+background: var(--knob-color);
+border-color: transparent;
+
 }
 .modal-btn:hover,
 .modal-btn:focus {
-background-color: var(--accent-color);
-color: #FFFFFF;
+background-color: #188ce8;
 }
 
 /* ================================DESCRIPTION*/
 .desc{
-font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
-letter-spacing: 0.03em;
 text-transform: uppercase;
-
-color: #212121;
+color: var(--text-color);
 }
 
 .desc-item {
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--mail-color);
 }
 
 /* ==================================ABOUT */
@@ -104,7 +147,7 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--text-color);
 }
 
 /* ==================================TEAM */
@@ -113,29 +156,27 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
-letter-spacing: 0.03em;
-
-color: #212121;
+color: var(--text-color);
 }
 
 .gallery-item {
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--mail-color);
 
 }
 
 /* =================================FOOTER */
 .footer {
-background: #2F303A;
+background: var(--background-color);
 }
 .adress {
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--whitey-color);
 }
 
 .contact-link {
@@ -148,7 +189,7 @@ color: rgba(255, 255, 255, 0.6);
 
 /* ==========================PORTFOLIO */
 .logo-color-footer {
-color: #FFFFFF;
+color: var(--whitey-color);
 }
 
 .desc-list-portfolio{
@@ -157,7 +198,7 @@ font-size: 16px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--text-color);
 }
 
 .gallery-portfolio{
@@ -165,11 +206,11 @@ font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-color: #212121;
+color: var(--text-color);
 }
 
 .portfolio-item{
 line-height: 1.88;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--mail-color);
 }
