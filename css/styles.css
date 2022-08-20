@@ -142,7 +142,7 @@ background-color: #188ce8;
 }
 
 .modal-btn.active {
-    border-color: var(--knob-color);
+    background-color: var(--knob-color);
     color: var(--whitey-color);
 }
 
