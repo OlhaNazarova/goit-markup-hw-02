@@ -4,7 +4,6 @@
     --whitey-color: #ffffff;
     --mail-color: #757575;
     --background-color: #2F303A;
-    --knob-color: #2196F3;
     --desc-color: #F5F4FA;
 
 
@@ -96,6 +95,10 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--mail-color); 
 }
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+color: var(--accent-color);
+}
 
 /*  =========================================HERO */
 
@@ -124,16 +127,16 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
-color: var(--text-color);
+color: var(--whitey-color)
 cursor: pointer;
-background: #F5F4FA;
+background: #188ce8;
 border-color: transparent;
 
 }
 .modal-btn:hover,
 .modal-btn:focus {
-    color: #ffffff;
-background-color: #188ce8;
+background-color: var(--accent-color);
+color: var(--whitey-color);
 }
 
 .modal-btn.current {
@@ -142,7 +145,7 @@ background-color: #188ce8;
 }
 
 .modal-btn.active {
-    background-color: var(--knob-color);
+    background-color: var(--accent-color);
     color: var(--whitey-color);
 }
 
